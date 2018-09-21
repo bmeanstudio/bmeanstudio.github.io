@@ -87,7 +87,7 @@ nav.white ul a:hover {
 }
 
 #index-banner .anchor-link {
-  margin-top: 41.5vh;
+  margin-top: 38vh;
 }
 
 .header-main {
@@ -122,13 +122,26 @@ nav.white ul a:hover {
   background-color: rgba(0,0,0,.3);
 }
 
+.about-us-wrapper {
+  background-color: #1b1d1f;
+}
+
 .projects-wrapper {
   background-color: #151618;
+}
+
+.projects-wrapper,
+.about-us-wrapper {
+  min-height: 100vh;
 }
 
 .projects-title {
   font-size: 4.5rem;
   font-weight: 800;
+}
+
+.about-us-text {
+  font-size: 16px;
 }
 
 #services {
@@ -191,6 +204,7 @@ nav.white ul a:hover {
 }
 
 footer.page-footer {
+  padding-top: 0 !important;
   margin: 0;
 }
 
