@@ -94,7 +94,7 @@ nav .sidenav-trigger i {
 }
 
 #index-banner {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #index-banner .anchor-link {
@@ -241,7 +241,7 @@ nav .sidenav-trigger i {
 
 @media only screen and (max-width : 455px) {
   #index-banner .anchor-link {
-    margin-top: 25vh;
+    margin-top: 30vh;
   }
 
   .header-main {
@@ -252,6 +252,16 @@ nav .sidenav-trigger i {
 @media only screen and (max-width : 445px) {
   .btn-anchor-link-fill {
     margin-left: 0;
+  }
+}
+
+@media only screen and (max-width : 430px) {
+  .footer-copyright .container {
+    flex-direction: column;
+  }
+
+  .footer-social-network {
+    margin-top: 15px;
   }
 }
 
