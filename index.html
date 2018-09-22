@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>MEAN</title>
+  <title>MEAN | Web Studio</title>
 
   <link rel="shortcut icon" href="images/favicon.ico"/>
 
@@ -12,6 +12,17 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126212782-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-126212782-1');
+  </script>
+
 </head>
 <body>
   <div class="main-preloader-wrapper">
@@ -90,25 +101,37 @@
 
           <div class="row">
             <div class="col l6">
-              <img class="responsive-img" src="images/project1.jpg">
+              <div class="project-screen-wrapper">
+                <div class="project-background" style="background-image: url('images/project1.jpg');"></div>
+                <img class="responsive-img" src="images/project1.jpg">
+              </div>
+              <div class="project-info">
+                <h4 class="project-name">Project 1</h4>
+                <span class="project-type">Website</span>
+              </div>
+
+              <div class="show-on-large hide-on-med-and-down" style="height: 50px;"></div>
+
+              <div class="project-screen-wrapper">
+                <div class="project-background" style="background-image: url('images/project2.jpg');"></div>
+                <img class="responsive-img" src="images/project2.jpg">
+              </div>
+              <div class="project-info">
+                <h4 class="project-name">Project 2</h4>
+                <span class="project-type">Website</span>
+              </div>
             </div>
-            <div class="col l6"></div>
-          </div>
-          <div class="row">
-            <div class="col l5">
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <img class="responsive-img" src="images/project2.jpg">
-            </div>
-            <div class="col l1"></div>
-            <div class="col l5">
-              <img class="responsive-img" src="images/project3.jpg">
+            <div class="col l6">
+              <div class="show-on-large hide-on-med-and-down" style="height: 200px;"></div>
+
+              <div class="project-screen-wrapper">
+                <div class="project-background" style="background-image: url('images/project3.jpg');"></div>
+                <img class="responsive-img" src="images/project3.jpg">
+              </div>
+              <div class="project-info">
+                <h4 class="project-name">Project 3</h4>
+                <span class="project-type">Website</span>
+              </div>
             </div>
           </div>
 
@@ -141,11 +164,11 @@
                   </div>
                 </div>
                 <div class="row center">
-                  <h5 class="white-text">1 200 руб.</h5>
+                  <!--<h5 class="white-text">1 200 руб.</h5>-->
                 </div>
               </div>
             </div>
-            <div class="service-column-container">
+            <!--<div class="service-column-container">
               <div class="service-column">
                 <div class="row center">
                   <div class="service-icon-container">
@@ -159,10 +182,10 @@
                   </div>
                 </div>
                 <div class="row center">
-                  <h5 class="white-text">1 200 руб.</h5>
+                  &lt;!&ndash;<h5 class="white-text">1 200 руб.</h5>&ndash;&gt;
                 </div>
               </div>
-            </div>
+            </div>-->
             <div class="service-column-container">
               <div class="service-column">
                 <div class="row center">
@@ -173,15 +196,33 @@
                   </div>
                   <div class="col s12">
                     <h5 class="white-text">Landing page</h5>
-                    <p class="white-text">Продающий сайт с высокой конверсией за 10 дней под ключ</p>
+                    <p class="white-text">Продающий сайт с высокой конверсией под ключ</p>
                   </div>
                 </div>
                 <div class="row center">
-                  <h5 class="white-text">1 200 руб.</h5>
+                  <!--<h5 class="white-text">1 200 руб.</h5>-->
                 </div>
               </div>
             </div>
             <div class="service-column-container">
+              <div class="service-column">
+                <div class="row center">
+                  <div class="service-icon-container">
+                    <div class="service-icon">
+                      <i class="material-icons white-text">palette</i>
+                    </div>
+                  </div>
+                  <div class="col s12">
+                    <h5 class="white-text">Разработка веб-приложений</h5>
+                    <p class="white-text">Реализация веб-приложений с использованием современных frontend-технологий</p>
+                  </div>
+                </div>
+                <div class="row center">
+                  <!--<h5 class="white-text">1 200 руб.</h5>-->
+                </div>
+              </div>
+            </div>
+            <!--<div class="service-column-container">
               <div class="service-column">
                 <div class="row center">
                   <div class="service-icon-container">
@@ -195,7 +236,7 @@
                   </div>
                 </div>
                 <div class="row center">
-                  <h5 class="white-text">1 200 руб.</h5>
+                  &lt;!&ndash;<h5 class="white-text">1 200 руб.</h5>&ndash;&gt;
                 </div>
               </div>
             </div>
@@ -213,7 +254,7 @@
                   </div>
                 </div>
                 <div class="row center">
-                  <h5 class="white-text">1 200 руб.</h5>
+                  &lt;!&ndash;<h5 class="white-text">1 200 руб.</h5>&ndash;&gt;
                 </div>
               </div>
             </div>
@@ -231,10 +272,10 @@
                   </div>
                 </div>
                 <div class="row center">
-                  <h5 class="white-text">1 200 руб.</h5>
+                  &lt;!&ndash;<h5 class="white-text">1 200 руб.</h5>&ndash;&gt;
                 </div>
               </div>
-            </div>
+            </div>-->
           </div>
 
         </div>
@@ -253,22 +294,22 @@
 
         <div class="row">
           <div class="col l4 m6 s12">
-            <div class="row" style="display: flex; align-items: center;">
+            <div class="row" style="display: flex; align-items: center; height: 59px;">
               <div class="col s2">
                 <i class="material-icons">email</i>
               </div>
-              <div class="col s10">
+              <div class="col s10" style="display:flex; flex-direction: column; justify-content: space-between; height: 49px;">
                 <h6 style="margin: 0;">Почта</h6>
                 <p style="margin: 0;">bazhin.neatstudio@gmail.com</p>
               </div>
             </div>
           </div>
           <div class="col l4 m6 s12">
-            <div class="row" style="display: flex; align-items: center;">
+            <div class="row" style="display: flex; align-items: center; height: 59px;">
               <div class="col s2">
                 <i class="material-icons">phone</i>
               </div>
-              <div class="col s10">
+              <div class="col s10" style="display:flex; flex-direction: column; justify-content: space-between; height: 49px;">
                 <h6 style="margin: 0;">Телефон</h6>
                 <p style="margin: 0;">+375 (29) 978-93-55</p>
               </div>
@@ -286,12 +327,6 @@
                 <a href="https://www.instagram.com/mean_studio/" target="_blank"><img class="instagram-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IgogICAgIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIKICAgICB2aWV3Qm94PSIwIDAgMzIgMzIiCiAgICAgc3R5bGU9ImZpbGw6IzIxMjEyMTsiPjxnIGlkPSJzdXJmYWNlMSI+PHBhdGggc3R5bGU9IiAiIGQ9Ik0gMTEuNDY4NzUgNSBDIDcuOTE3OTY5IDUgNSA3LjkxNDA2MyA1IDExLjQ2ODc1IEwgNSAyMC41MzEyNSBDIDUgMjQuMDgyMDMxIDcuOTE0MDYzIDI3IDExLjQ2ODc1IDI3IEwgMjAuNTMxMjUgMjcgQyAyNC4wODIwMzEgMjcgMjcgMjQuMDg1OTM4IDI3IDIwLjUzMTI1IEwgMjcgMTEuNDY4NzUgQyAyNyA3LjkxNzk2OSAyNC4wODU5MzggNSAyMC41MzEyNSA1IFogTSAxMS40Njg3NSA3IEwgMjAuNTMxMjUgNyBDIDIzLjAwMzkwNiA3IDI1IDguOTk2MDk0IDI1IDExLjQ2ODc1IEwgMjUgMjAuNTMxMjUgQyAyNSAyMy4wMDM5MDYgMjMuMDAzOTA2IDI1IDIwLjUzMTI1IDI1IEwgMTEuNDY4NzUgMjUgQyA4Ljk5NjA5NCAyNSA3IDIzLjAwMzkwNiA3IDIwLjUzMTI1IEwgNyAxMS40Njg3NSBDIDcgOC45OTYwOTQgOC45OTYwOTQgNyAxMS40Njg3NSA3IFogTSAyMS45MDYyNSA5LjE4NzUgQyAyMS40MDIzNDQgOS4xODc1IDIxIDkuNTg5ODQ0IDIxIDEwLjA5Mzc1IEMgMjEgMTAuNTk3NjU2IDIxLjQwMjM0NCAxMSAyMS45MDYyNSAxMSBDIDIyLjQxMDE1NiAxMSAyMi44MTI1IDEwLjU5NzY1NiAyMi44MTI1IDEwLjA5Mzc1IEMgMjIuODEyNSA5LjU4OTg0NCAyMi40MTAxNTYgOS4xODc1IDIxLjkwNjI1IDkuMTg3NSBaIE0gMTYgMTAgQyAxMi42OTkyMTkgMTAgMTAgMTIuNjk5MjE5IDEwIDE2IEMgMTAgMTkuMzAwNzgxIDEyLjY5OTIxOSAyMiAxNiAyMiBDIDE5LjMwMDc4MSAyMiAyMiAxOS4zMDA3ODEgMjIgMTYgQyAyMiAxMi42OTkyMTkgMTkuMzAwNzgxIDEwIDE2IDEwIFogTSAxNiAxMiBDIDE4LjIyMjY1NiAxMiAyMCAxMy43NzczNDQgMjAgMTYgQyAyMCAxOC4yMjI2NTYgMTguMjIyNjU2IDIwIDE2IDIwIEMgMTMuNzc3MzQ0IDIwIDEyIDE4LjIyMjY1NiAxMiAxNiBDIDEyIDEzLjc3NzM0NCAxMy43NzczNDQgMTIgMTYgMTIgWiAiPjwvcGF0aD48L2c+PC9zdmc+"></a>
               </div>
             </div>
-            <div class="row">
-              <div class="col s3"></div>
-              <div class="col s3"></div>
-              <div class="col s3"></div>
-              <div class="col s3"></div>
-            </div>
           </div>
         </div>
 
@@ -308,31 +343,31 @@
       <form id="form-contact">
         <div class="row">
           <div class="input-field col l3 m6 s12">
-            <input id="name" name="entry.19626128" type="text" class="validate">
+            <input id="name" name="entry.1100425275" type="text" class="validate" required>
             <label for="name">Ваше имя</label>
           </div>
           <div class="input-field col l3 m6 s12">
-            <input id="phone-number" name="entry.2118858407" type="text" class="validate">
+            <input id="phone-number" name="entry.2048398787" type="text" class="validate">
             <label for="phone-number">Номер телефона</label>
           </div>
           <div class="input-field col l3 m6 s12">
-            <input id="email" name="entry.575819992" type="text" class="validate">
+            <input id="email" name="entry.1425329534" type="email" class="validate" required>
             <label for="email">Адрес почты</label>
           </div>
           <div class="input-field col l3 m6 s12">
-            <input id="company-name" name="entry.1252631321" type="text" class="validate">
+            <input id="company-name" name="entry.1744388598" type="text" class="validate">
             <label for="company-name">Название компании</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col l12 m12 s12">
-            <input id="project-description" name="entry.819621699" type="text" class="validate">
+            <input id="project-description" name="entry.2079378003" type="text" class="validate" required>
             <label for="project-description">Расскажите немного о своем проекте</label>
           </div>
         </div>
         <div class="row">
           <div class="col s12">
-            <a href="#" id="button_contact" class="waves-effect waves-light green btn btn-anchor-link" style="margin-top: 0">Отправить<i class="material-icons right">send</i></a>
+            <button id="button_contact" class="waves-effect waves-light green btn btn-anchor-link" style="margin-top: 0">Отправить<i class="material-icons right">send</i></button>
           </div>
         </div>
       </form>

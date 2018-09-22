@@ -1,5 +1,7 @@
 (function ($) {
     $(function () {
+        var MESSAGE_SUCCESS = '<span class="green-text">Ваша форма успешно отправлена!<br/> В ближайшее время наш менеджер свяжется с Вами.</span>';
+
         $('.sidenav').sidenav();
 
         $(window).on('load', function () {
@@ -33,7 +35,7 @@
             e.preventDefault();
             var formData = $(this).serialize();
             $.ajax({
-                url: "https://docs.google.com/forms/d/e/1FAIpQLSdFyjokPUuQnsucvT-7LemVyXUsDDYG-rLAHVnalyGJXhVWVg/formResponse", // слать надо сюда, строку с буковками надо заменить на вашу, это атрибут action формы
+                url: "https://docs.google.com/forms/d/e/1FAIpQLSeAWXt7Ezz1edoniLpJOGQSKEyEcMpPJ6ZwBavUQHcfcbKOvw/formResponse", // слать надо сюда, строку с буковками надо заменить на вашу, это атрибут action формы
                 data: formData,
                 type: "POST",
                 dataType: "xml",
@@ -42,10 +44,22 @@
                 },
                 statusCode: {
                     0: function () {
-                        $(this).html('<h4>Спасибо!</h4><p>Форма отправлена блаблабла</p>');
+                        M.toast({html: MESSAGE_SUCCESS, classes: 'rounded'});
+
+                        $('#name').val('');
+                        $('#phone-number').val('');
+                        $('#email').val('');
+                        $('#company-name').val('');
+                        $('#project-description').val('');
                     },
                     200: function () {
-                        $(this).html('<h4>Спасибо!</h4><p>Форма отправлена блаблабла</p>');
+                        M.toast({html: MESSAGE_SUCCESS, classes: 'rounded'});
+
+                        $('#name').val('');
+                        $('#phone-number').val('');
+                        $('#email').val('');
+                        $('#company-name').val('');
+                        $('#project-description').val('');
                     }
                 }
             });
