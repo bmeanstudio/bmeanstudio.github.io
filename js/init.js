@@ -2,10 +2,22 @@
     $(function () {
         var MESSAGE_SUCCESS = '<span class="green-text">Ваша форма успешно отправлена!<br/> В ближайшее время наш менеджер свяжется с Вами.</span>';
 
+        window.onload = function() {
+            setTimeout(function() {
+                scrollTo(0, -1);
+            }, 0);
+        };
+
+        /*$(window).on('unload', function() {
+            $(window).scrollTop(0);
+        });*/
+
+        window.onunload = function(){ window.scrollTo(0,0); }
+
+
         $('.sidenav').sidenav();
 
         $(window).on('load', function () {
-            $(this).scrollTop(0);
             $("body").css("overflow-y", "hidden");
             $('.main-preloader-wrapper').delay(1200).fadeOut();
             setTimeout(function () {
