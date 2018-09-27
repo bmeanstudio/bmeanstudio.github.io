@@ -14,7 +14,7 @@
 
         window.onunload = function(){ window.scrollTo(0,0); }
 
-
+        AOS.init();
         $('.sidenav').sidenav();
 
         $(window).on('load', function () {

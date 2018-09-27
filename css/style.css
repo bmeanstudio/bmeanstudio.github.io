@@ -192,6 +192,14 @@ nav .sidenav-trigger i {
   color: #ffffff;
 }
 
+.hide-on-med-and-down.left-column {
+  height: 50px;
+}
+
+.hide-on-med-and-down.right-column {
+  height: 200px;
+}
+
 .about-us-text {
   font-size: 16px;
 }
@@ -226,6 +234,54 @@ nav .sidenav-trigger i {
   .contacts-title {
     margin-left: 0;
   }
+}
+
+#contacts {
+  height: calc(100vh - 120px);
+}
+
+.contacts__email-wrapper,
+.contacts__phone-wrapper {
+  display: flex;
+  height: 59px;
+}
+
+.contacts__social-wrapper {
+  display: flex;
+}
+
+.contacts__email-info-wrapper,
+.contacts__phone-info-wrapper {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 49px;
+}
+
+.contacts__email-info-wrapper h6,
+.contacts__email-info-wrapper p,
+.contacts__phone-info-wrapper h6,
+.contacts__phone-info-wrapper p {
+  margin-bottom: 0;
+}
+
+.contacts__email-info-wrapper h6,
+.contacts__phone-info-wrapper h6,
+.contacts-social-network h6 {
+  margin-top: 0;
+}
+
+.contacts-social-network h6 {
+  margin-bottom: 10px;
+}
+
+.order__title,
+.footer-copyright {
+  color: #212121;
+}
+
+.order__button-send {
+  margin-top: 0;
 }
 
 @media only screen and (max-width : 495px) {
@@ -312,7 +368,7 @@ footer.page-footer {
   margin-bottom: 25px;
 }
 
-/*Flex items*/
+/* Flex items */
 .service-container {
   display: flex;
   flex-wrap: wrap;
