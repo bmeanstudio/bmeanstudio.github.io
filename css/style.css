@@ -237,7 +237,7 @@ nav .sidenav-trigger i {
 }
 
 #contacts {
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
 }
 
 .contacts__email-wrapper,
