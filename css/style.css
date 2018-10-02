@@ -142,9 +142,31 @@ nav .sidenav-trigger i {
 .services-title,
 .contacts-title {
   font-family: 'Raleway', sans-serif;
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   font-weight: 800;
   margin-left: 4rem;
+  transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (max-width : 960px) {
+  .projects-title,
+  .services-title,
+  .contacts-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-left: 4rem;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  .projects-title,
+  .services-title,
+  .contacts-title {
+    font-size: 2.6rem;
+    margin-left: 1rem;
+    text-align: center;
+  }
 }
 
 .project-screen-wrapper {
