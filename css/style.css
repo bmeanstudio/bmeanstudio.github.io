@@ -174,6 +174,16 @@ nav .sidenav-trigger i {
   padding: 4.5em;
 }
 
+@media only screen and (max-width : 450px) {
+  .project-screen-wrapper {
+    padding: 2.5em;
+  }
+
+  .project-info {
+    padding-left: 2.5em !important;
+  }
+}
+
 .project-background {
   position: absolute;
   width: 100%;
@@ -297,9 +307,24 @@ nav .sidenav-trigger i {
   margin-bottom: 10px;
 }
 
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #4CAF50;
+  box-shadow: 0 1px 0 0 #4CAF50;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label {
+  color: #4CAF50;
+}
+
 .order__title,
 .footer-copyright {
   color: #212121;
+}
+
+.footer-copyright {
+  line-height: 1.15;
 }
 
 .order__button-send {
@@ -307,7 +332,6 @@ nav .sidenav-trigger i {
 }
 
 @media only screen and (max-width : 495px) {
-
   .header-logo {
     margin-top: 20vh;
   }
