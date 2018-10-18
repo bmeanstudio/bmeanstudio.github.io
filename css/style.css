@@ -417,6 +417,10 @@ footer.page-footer {
   margin-right: 12px;
 }
 
+.button-contact-wrapper {
+  padding-bottom: 40px;
+}
+
 .footer-copyright {
   background-color: #0a0a0b !important;
 }
