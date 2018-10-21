@@ -17,7 +17,7 @@
         AOS.init();
         $('.sidenav').sidenav();
 
-        $(window).on('load', function () {
+        /*$(window).on('load', function () {
             $("body").css("overflow-y", "hidden");
             $('.main-preloader-wrapper').delay(1200).fadeOut();
             setTimeout(function () {
@@ -25,7 +25,7 @@
                 $('.parallax').parallax();
                 $("body").css("overflow-y", "auto");
             }, 1200);
-        });
+        });*/
 
         $(".anchor-link").on("click", "a", function (event) {
             var heightHeader = 60;

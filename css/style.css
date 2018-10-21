@@ -4,7 +4,7 @@ body {
 }
 
 .main-wrapper {
-  opacity: 0;
+  /*opacity: 0;*/
 }
 
 .main-preloader-wrapper {
@@ -86,6 +86,22 @@ nav.white ul a:hover {
 nav .sidenav-trigger i {
   height: 64px !important;
   line-height: 64px !important;
+}
+
+.locale-link {
+  position: absolute;
+}
+
+@media only screen and (min-width : 992px) {
+  .locale-link {
+    left: 120px;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .locale-link {
+    right: 20px;
+  }
 }
 
 .sidenav li > a {
