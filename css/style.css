@@ -265,7 +265,7 @@ nav .sidenav-trigger i {
 }
 
 .hide-on-med-and-down.left-column {
-  height: 150px;
+  height: 140px;
 }
 
 .hide-on-med-and-down.right-column {
@@ -378,6 +378,18 @@ input[type=email]:not(.browser-default):focus:not([readonly]) + label {
 
   .nav-wrapper {
      width: 100%;
+  }
+}
+
+@media only screen and (max-width : 506px) {
+  #index-banner .anchor-link.en {
+    margin-top: 33vh;
+  }
+}
+
+@media only screen and (max-width : 390px) {
+  #index-banner .anchor-link.en {
+    margin-top: 30vh;
   }
 }
 
